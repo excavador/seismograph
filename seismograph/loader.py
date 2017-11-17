@@ -45,11 +45,12 @@ def load_module(module_name, package=None):
     # Can be conflict with global name
     # We're obliged to talk about this
     if module_name in sys.modules:
-        raise LoaderError(
-            'Module "{}" already exist in program context. {}.'.format(
-                module_name, sys.modules[module_name],
-            ),
-        )
+        return
+    #    raise LoaderError(
+    #        'Module "{}" already exist in program context. {}.'.format(
+    #            module_name, sys.modules[module_name],
+    #        ),
+    #    )
 
     module = import_module(module_name)
 
