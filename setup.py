@@ -20,21 +20,10 @@ assert __version__
 
 
 class libs:
-
-    flask = 'flask>=0.7'
-    seisma = 'seisma>=0.0.1'
     requests = 'requests>=2.5'
-    selenium = 'selenium>=2.46'
-    sqlalchemy = 'sqlalchemy>=0.8'
-    jsonschema = 'jsonschema>=1.0'
 
 
 EXTENSIONS = [
-    'mocker',
-    'alchemy',
-    'builder',
-    'selenium',
-    'seisma',
 ]
 
 REQUIREMENTS = [
@@ -47,22 +36,6 @@ CONSOLE_SCRIPTS = [
 ]
 
 EX_REQUIREMENTS = {
-    'mocker': [
-        libs.flask,
-        libs.requests,
-    ],
-    'selenium': [
-        libs.selenium,
-    ],
-    'alchemy': [
-        libs.sqlalchemy,
-    ],
-    'builder': [
-        libs.jsonschema,
-    ],
-    'seisma': [
-        libs.seisma,
-    ],
 }
 
 EX_CONSOLE_SCRIPTS = {
